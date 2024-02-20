@@ -8,13 +8,13 @@ class Controller extends React.Component{
     }
     handleChange(event){
         this.setState({
-            input:"event.target.value"
+            input:event.target.value
         })
     }
     render(){
         return(
             <div>
-                <input></input>
+                <input onChange = {this.handleChange}></input>
                 <h1>Controller input:{this.state.input}</h1>
             </div>
         )
